@@ -8,49 +8,101 @@
 </head>
 
 <link rel="stylesheet" href="./css/uikit.css">
+<link rel="stylesheet" href="./css/styles.css">
 
 <body>
-    <div style="width: 100%; text-align: center;">
-        <img src="./images/Logo Long.PNG" alt="">
-    </div>
-    <div>
-
-        <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click" style="width: 100%; background-color: #222222; color: #ffffff;">
-
-            <div class="uk-navbar-center">
-
-                <ul class="uk-navbar-nav">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./pages/calibration.html">Calibration</a></li>
-                    <li><a href="./pages/onsite.html">On-Site</a></li>
-                    <li><a href="./pages/about.html">About Us</a></li>
-                    <li><a href="./pages/contact.html">Contact Us</a></li>
-                </ul>
-
+    <div class="container">
+        
+        <div style="width: 100%; text-align: center;">
+            <img src="./images/Logo Long.PNG" alt="">
+        </div>
+        <div>
+            <div class="uk-offcanvas-content">
+                
+                <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+                    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                            <li>
+                                <a href="./index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="./pages/calibration.html">Calibration</a>
+                            </li>
+                            <li>
+                                <a href="./pages/onsite.html">On-Site</a>
+                            </li>
+                            <li>
+                                <a href="./pages/about.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="./pages/contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+            
+                    </div>
+                </div>
             </div>
-        </nav>
+            <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click" style="width: 100%; background-color: #222222; color: #ffffff; height: 60px;">
+
+                <div class="uk-navbar-left uk-hidden@s uk-padding">
+                    <a type="button" uk-toggle="target: #offcanvas-nav-primary"><span uk-icon="icon: menu; ratio: 2"></span> </a>
+                </div>
+                <div class="uk-navbar-center uk-visible@s">
+                    <ul class="uk-navbar-nav">
+                        <li>
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./pages/calibration.html">Calibration</a>
+                        </li>
+                        <li>
+                            <a href="./pages/onsite.html">On-Site</a>
+                        </li>
+                        <li>
+                            <a href="./pages/about.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="./pages/contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+
+        </div>
+
+        <div class="uk-container uk-container-small" style="margin-top: 45px;">
+            <h2 class="uk-text-center uk-text-left@s">What We Do</h2>
+            <div class="uk-panel">
+                <img class="uk-align-right@s uk-align-center uk-margin-remove-adjacent uk-width-1-1 uk-width-medium@s" src="./images/What we do combo.jpg" alt="What We Do">
+                <p class="paragraph uk-text-justify uk-text-left@s">Precision Cal Northwest is a full-service metrology lab focused on instrument calibration, repair, testing,
+                    and certification. Electronic, mechanical, and dimensional instruments are checked to ensure they are
+                    within manufacturer specifications.</p>
+            </div>
+            <h2 class="uk-text-center uk-text-right@s" style="text-align: right;">Why We Do It</h2>
+            <div class="uk-panel">
+                <img class="uk-align-left@s uk-align-center uk-margin-remove-adjacent uk-width-1-1 uk-width-medium@s" src="./images/Why We do.jpg" alt="Why We Do It">
+                <p class="paragraph uk-text-justify uk-text-left@s">Calibration is a quality assurance measure. It ensures that products, equipment, and services are being performed
+                    to the best of their ability. Calibration gives you confidence in your instruments. Get the job done
+                    right the first time.</p>
+            </div>
+            <h2 class="uk-text-center uk-text-left@s">NIST Traceability</h2>
+            <div class="uk-panel">
+                <img class="uk-align-right@s uk-align-center uk-margin-remove-adjacent uk-width-1-1 uk-width-medium@s" src="./images/NIST Logo.jpg" alt="NIST Traceability">
+                <p class="paragraph uk-text-justify uk-text-left@s">Precision Cal Northwest certifies that all serviced instruments will be inspected, calibrated, or compared
+                    with master reference standards and meet or exceed all published specifications using standards whose
+                    accuracies are traceable to the U.S. National Institute of Standards and Technology (NIST), or other
+                    Standard Organizations.</p>
+            </div>
+        </div>
+
 
     </div>
-
-    <div class="uk-container uk-container-small" style="margin-top: 45px;">
-        <h2>What We Do</h2>
-        <div class="uk-panel">
-            <img class="uk-align-right uk-margin-remove-adjacent uk-animation-slide-right-medium" src="./images/What we do combo.jpg" width="225" height "150" alt="Example image">
-            <p>Precision Cal Northwest is a full-service metrology lab focused on instrument calibration, repair, testing, and certification. Electronic, mechanical, and dimensional instruments are checked to ensure they are within manufacturer specifications.</p>
-        </div>
-        <h2 style="text-align: right;">Why We Do It</h2>
-        <div class="uk-panel">
-            <img class="uk-align-left uk-margin-remove-adjacent uk-animation-slide-left-medium" src="./images/Why We do.jpg" width="225" height "150" alt="Example image">
-            <p>Calibration is a quality assurance measure. It ensures that products, equipment, and services are being performed to the best of their ability. Calibration gives you confidence in your instruments. Get the job done right the first time.</p>
-        </div>
-        <h2>NIST Traceability</h2>
-        <div class="uk-panel">
-            <img class="uk-align-right uk-margin-remove-adjacent uk-animation-slide-right-medium" src="./images/NIST Logo.jpg" width="225" height "150" alt="Example image">
-            <p>Precision Cal Northwest certifies that all serviced instruments will be inspected, calibrated, or compared with master reference standards and meet or exceed all published specifications using standards whose accuracies are traceable to the
-                U.S. National Institute of Standards and Technology (NIST), or other Standard Organizations.</p>
+    <div class="footer">
+        <div class="left"></div>
+        <div class="right">Precision Cal Northwest &copy; <script>document.write((new Date()).getFullYear());</script>
         </div>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
     <!-- UIkit JS -->

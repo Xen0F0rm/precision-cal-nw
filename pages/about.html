@@ -8,44 +8,91 @@
 </head>
 
 <link rel="stylesheet" href="../css/uikit.css">
+<link rel="stylesheet" href="../css/styles.css">
 
 <body>
-    <div style="width: 100%; text-align: center;">
-        <img src="../images/Logo Long.PNG" alt="">
-    </div>
-    <div>
-
-        <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click" style="width: 100%; background-color: #222222; color: #ffffff;">
-
-            <div class="uk-navbar-center">
-
-                <ul class="uk-navbar-nav">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./calibration.html">Calibration</a></li>
-                    <li><a href="./onsite.html">On-Site</a></li>
-                    <li><a href="./about.html">About Us</a></li>
-                    <li><a href="./contact.html">Contact Us</a></li>
-                </ul>
-
+    <div class="container">
+        <div style="width: 100%; text-align: center;">
+            <img src="../images/Logo Long.PNG" alt="">
+        </div>
+        <div>
+            <div class="uk-offcanvas-content">
+                
+                <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+                    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                            <li>
+                                <a href="../index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="./calibration.html">Calibration</a>
+                            </li>
+                            <li>
+                                <a href="./onsite.html">On-Site</a>
+                            </li>
+                            <li>
+                                <a href="./about.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="./contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+            
+                    </div>
+                </div>
             </div>
-        </nav>
+            <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click" style="width: 100%; background-color: #222222; color: #ffffff; height: 60px;">
 
+                <div class="uk-navbar-left uk-hidden@s uk-padding">
+                    <a type="button" uk-toggle="target: #offcanvas-nav-primary"><span uk-icon="icon: menu; ratio: 2"></span> Menu</a> 
+                </div>
+                <div class="uk-navbar-center uk-visible@s">
+                    <ul class="uk-navbar-nav">
+                        <li>
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./calibration.html">Calibration</a>
+                        </li>
+                        <li>
+                            <a href="./onsite.html">On-Site</a>
+                        </li>
+                        <li>
+                            <a href="./about.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+
+        </div>
+        <div class="uk-container uk-container-small" style="margin-top: 45px;">
+            <h2>About Us</h2>
+            <div class="paragraph">
+                Precision Instruments was established in 1993 by Richard C. Lange and his wife Deborah. Precision Instruments quickly garnered
+                a reputation of excellence through Richard’s skilled and unwavering discipline. In 2011 Marc Gamble, the
+                Lange’s son in law, was trained by Richard and joined the team.
+            </div>
+            <div class="paragraph">
+                We are proud to carry on this tradition as Precision Cal Northwest LLC, under the ownership of Marc Gamble and Austin Salisbury.
+                Marc and Austin met while studying Mechanical Engineering at Boise State University. After earning their
+                degrees, the two decided to take the helm and direct Precision Cal Northwest into the future with a commitment
+                to our foundation and dedication to providing outstanding value and service for our clients.
+            </div>
+            <div class="paragraph">
+                We are honored to continue serving the Northwest’s calibration needs.
+            </div>
+
+
+        </div>
     </div>
-    <div class="uk-container uk-container-small" style="margin-top: 45px;">
-        <h2>About Us</h2>
-        <div>
-            Precision Instruments was established in 1993 by Richard C. Lange and his wife Deborah. Precision Instruments quickly garnered a reputation of excellence through Richard’s skilled and unwavering discipline. In 2011 Marc Gamble, the Lange’s son in law,
-            was trained by Richard and joined the team.
+    <div class="footer">
+        <div class="right">Precision Cal Northwest &copy;
+            <script>document.write((new Date()).getFullYear());</script>
         </div>
-        <div>
-            We are proud to carry on this tradition as Precision Cal Northwest LLC, under the ownership of Marc Gamble and Austin Salisbury. Marc and Austin met while studying Mechanical Engineering at Boise State University. After earning their degrees, the two
-            decided to take the helm and direct Precision Cal Northwest into the future with a commitment to our foundation and dedication to providing outstanding value and service for our clients.
-        </div>
-        <div>
-            We are honored to continue serving the Northwest’s calibration needs.
-        </div>
-
-
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 

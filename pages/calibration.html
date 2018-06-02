@@ -8,36 +8,145 @@
 </head>
 
 <link rel="stylesheet" href="../css/uikit.css">
+<link rel="stylesheet" href="../css/styles.css">
 
 <body>
-    <div style="width: 100%; text-align: center;">
-        <img src="../images/Logo Long.PNG" alt="">
-    </div>
-    <div>
+    <div class="container">
+        <div style="width: 100%; text-align: center;">
+            <img src="../images/Logo Long.PNG" alt="">
+        </div>
+        <div>
+            <div class="uk-offcanvas-content">
 
-        <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click" style="width: 100%; background-color: #222222; color: #ffffff;">
+                <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+                    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                            <li>
+                                <a href="../index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="./calibration.html">Calibration</a>
+                            </li>
+                            <li>
+                                <a href="./onsite.html">On-Site</a>
+                            </li>
+                            <li>
+                                <a href="./about.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="./contact.html">Contact Us</a>
+                            </li>
+                        </ul>
 
-            <div class="uk-navbar-center">
-
-                <ul class="uk-navbar-nav">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./calibration.html">Calibration</a></li>
-                    <li><a href="./onsite.html">On-Site</a></li>
-                    <li><a href="./about.html">About Us</a></li>
-                    <li><a href="./contact.html">Contact Us</a></li>
-                </ul>
-
+                    </div>
+                </div>
             </div>
-        </nav>
+            <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click" style="width: 100%; background-color: #222222; color: #ffffff; height: 60px;">
 
+                <div class="uk-navbar-left uk-hidden@s uk-padding">
+                    <a type="button" uk-toggle="target: #offcanvas-nav-primary">
+                        <span uk-icon="icon: menu; ratio: 2"></span>
+                    </a>
+                </div>
+                <div class="uk-navbar-center uk-visible@s">
+                    <ul class="uk-navbar-nav">
+                        <li>
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./calibration.html">Calibration</a>
+                        </li>
+                        <li>
+                            <a href="./onsite.html">On-Site</a>
+                        </li>
+                        <li>
+                            <a href="./about.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+
+        </div>
+        <div class="uk-container uk-container-small" style="margin-top: 45px;">
+            <h2>Calibration</h2>
+            <p class="paragraph">Cal Northwest provides calibration services for a wide range of mechanical, temperature, pressure, and electrical
+                devices. We strive to provide a balance between quick turnaround time and exceptional quality requirements.
+                All calibrations include a high-quality certification, traceable to NIST Standards, each at no additional
+                cost. Our technicians are trained, qualified, and driven to provide the highest quality work that can be
+                sent back to the customer with pride. Services performed by Precision Cal Northwest include but are not limited
+                to: </p>
+            <div class="uk-padding">
+                <div uk-slideshow="animation: push">
+
+                    <div class="uk-position-relative uk-visible-toggle uk-light">
+
+                        <ul class="uk-slideshow-items">
+                            <li>
+                                <img src="../images/Caliper_Mic.jpg" alt="Caliper Mic" uk-cover>
+                            </li>
+                            <li>
+                                <img src="../images/Gauges.jpg" alt="Gauges" uk-cover>
+                            </li>
+                            <li>
+                                <img src="../images/Indicators.jpg" alt="Indicators" uk-cover>
+                            </li>
+                            <li>
+                                <img src="../images/Multimeters.jpg" alt="Multimeters" uk-cover>
+                            </li>
+                            <li>
+                                <img src="../images/Torques.jpg" alt="Torques" uk-cover>
+                            </li>
+                        </ul>
+
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+                    </div>
+
+                    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+                </div>
+                <ul class="uk-list uk-list-bullet paragraph">
+                    <li>
+                        <strong>Calipers</strong> – Digital, Dial, Vernier, Solar</li>
+                    <li>
+                        <strong>Indicators</strong> – Digital, Dial, Test, Plunger, Lever </li>
+                    <li>
+                        <strong>Micrometers</strong> – Digital, Conventional, Outside, Inside, Depth, Optical </li>
+                    <li>
+                        <strong>Plug, Wire, Ball, &amp; Pin Gauge Inspection </strong>
+                    </li>
+                    <li>
+                        <strong>Height &amp; Thickness Gauges</strong> – Digital, Dial </li>
+                    <li>
+                        <strong>Torque Wrenches &amp; Drivers</strong> – in-oz, in-lb, ft-lb </li>
+                    <li>
+                        <strong>Gauges</strong> – Pressure, Vacuum, Conventional, Digital </li>
+                    <li>
+                        <strong>Multimeters</strong> – Digital, Analog, Clamp-on </li>
+                    <li>
+                        <strong>Thermometers</strong> – Thermocouples, RTD Probes, Bi-metal, Infrared</li>
+                    <li>
+                        <strong>Levels/Protractors</strong> – Machinists, Spirit, Digital </li>
+                    <li>
+                        <strong>Bore Gauge Assemblies</strong>
+                    </li>
+                    <li>
+                        <strong>Backflow Test Kits</strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="uk-container uk-container-small" style="margin-top: 45px;">
-        <h2>Calibration</h2>
-        Precision Cal Northwest provides calibration services for a wide range of mechanical, temperature, pressure, and electrical devices. We strive to provide a balance between quick turnaround time and exceptional quality requirements. All calibrations include
-        a high-quality certification, traceable to NIST Standards, each at no additional cost. Our technicians are trained, qualified, and driven to provide the highest quality work that can be sent back to the customer with pride. Services performed
-        by Precision Cal Northwest include but are not limited to:  Calipers – Digital, Dial, Vernier, Solar  Indicators – Digital, Dial, Test, Plunger, Lever  Micrometers – Digital, Conventional, Outside, Inside, Depth, Optical  Plug, Wire, Ball,
-        &amp; Pin Gauge Inspection  Height &amp; Thickness Gauges – Digital, Dial  Torque Wrenches &amp; Drivers – in-oz, in-lb, ft-lb  Gauges – Pressure, Vacuum, Conventional, Digital  Multimeters – Digital, Analog, Clamp-on  Thermometers – Thermocouples,
-        RTD Probes, Bi-metal, Infrared  Levels/Protractors – Machinists, Spirit, Digital  Bore Gauge Assemblies  Backflow Test Kits
+    <div class="footer">
+        <div class="left"></div>
+        <div class="right">Precision Cal Northwest &copy;
+            <script>document.write((new Date()).getFullYear());</script>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
